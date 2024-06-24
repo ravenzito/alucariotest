@@ -1,0 +1,28 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "titulo": "Lucario - SWSH09: Brilliant Stars (SWSH09)",
+      "preco": "R$ 25,00",
+      "imagem": "/public/img/lucario-card-2.webp"
+    },
+    {
+      "id": 2,
+      "titulo": "Lucario ex - Prize Pack Series Cards",
+      "preco": "R$65,00",
+      "imagem": "/public/img/lucario-card.webp"
+    },
+    {
+      "id": 3,
+      "titulo": "Lucario Funko",
+      "preco": "R$120,00",
+      "imagem": "/public/img/lucario-funko.jpg"
+    },
+    {
+      "id": 4,
+      "titulo": "Lucario Action Figure",
+      "preco": "R$350,00",
+      "imagem": "/public/img/lucario-figure.jpg"
+    }
+  ]
+}

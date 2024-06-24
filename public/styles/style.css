@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Press+Start+2P&display=swap');
+
+
+:root {
+    --corprincipal: #6ea4bb;
+    --corsecundaria: #464646;
+    --corterciaria: #f0dba5;
+    --font-1: "Press Start 2P", system-ui;
+    --font-2: "IBM Plex Mono", monospace;
+}
+
+body {
+    margin: 0;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corprincipal);
+    padding: 10px 0;
+}
+
+.cabecalho img {
+    max-width: 138px;
+    max-height: 58px;
+}
+
+.imagem__espelhada{
+    transform: scaleX(-1);
+}
+
+.cabecalho h1 {
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 10px; 
+}
+
+.conteiner__principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulario__produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    gap: 10px;
+}
+
+.formulario__titulo {
+    font-family: var(--font-1);
+    font-size: 24px;
+    text-align: center; 
+}
+
+.formulario__produto fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+    width: 350px;
+    border: none; 
+}
+
+.formulario__produto label {
+    font-family: var(--font-1);
+    text-align: center;
+}
+
+.formulario__produto input {
+    padding: 8px;
+    border-radius: 5px;
+    font-family: var(--font-2);
+}
+
+.formulario__botoes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.formulario__botao {
+    width: 150px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-family: var(--font-2);
+    cursor: pointer;
+    background-color: var(--corprincipal);
+}
+
+.formulario__botao:hover {
+    background-color: var(--corterciaria);
+}
+
+
+.produtos h2{
+    text-align: center;
+    font-family: var(--font-1);
+}
+
+.mensagem__sem__produtos {
+    display: none;
+    text-align: center;
+    font-family: var(--font-2);
+    margin-top: 20px;
+}
+
+.produtos__conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.produto__conteudo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 250px;
+    max-height: 500px;
+    margin: 30px;
+}
+
+.produtos__img {
+    height: 270px;
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+
+
+.produtos__img:hover {
+    transform: translateY(-20px);
+    transform: scale(1.2);
+}
+
+.produto__texto{
+    font-family: var(--font-2);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.botao__deletar{
+    border: none;  
+}
+
+.botao__deletar img{
+    height: 20px;
+    width: 20px;
+}
+
+.botao__deletar:hover{
+    transform: translateY(-20px);
+    transform: scale(1.2);
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--corprincipal);
+    padding: 10px 0;
+}
+
+.rodape div {
+    display: flex;
+    justify-content: center;
+}
+
+.rodape h3 {
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.rodape p {
+    font-size: 18px;
+    font-family: var(--font-2);
+}
+
+.rodape img {
+    max-width: 138px;
+    max-height: 58px;
+}
+
+
+@media (min-width: 800px) {
+    .conteiner__principal {
+        flex-direction: row;
+    }
+
+    .produtos {
+        margin-right: 20px; 
+        margin-top: 50px;
+        order: 1;
+        flex: 1;
+    }
+
+    .produtos__lista {
+        margin-right: 20px; 
+    }
+
+    .produtos__conteiner {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .formulario__produto {
+        order: 2;
+        align-self: flex-start; 
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/styles/style.css">
+    <title>aLucario</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <img class="imagem__espelhada" src="/public/img/lucario-pixel.png" alt="Lucario pixelado.">
+        <h1>aLucario</h1>
+        <img src="/public/img/lucario-pixel.png" alt="Lucario pixelado.">
+    </header>
+    <main>
+        <div class="conteiner__principal">
+        <section class="formulario__produto">
+            <h2 class="formulario__titulo">Adicionar <br> Produtos: </h2>
+            <form id="meuFormulario" data-formulario>
+                <fieldset>
+                    <label class="campo__etiqueta" for="nome">Nome do Produto</label>
+                    <input name="nome" id="nome" class="campo__escrita" minlength="3" required placeholder="Coloque o nome do produto" data-titulo />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset>
+                    <label class="campo__etiqueta" for="preco">Preço</label>
+                    <input name="preco" id="preco" class="campo__escrita campo__escrita--menor" required placeholder="Informe o preço do produto" data-preco />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <fieldset>
+                    <label class="campo__etiqueta" for="imagem">Imagem</label>
+                    <input name="imagem" id="imagem" class="campo__escrita campo__escrita--menor" required placeholder="Coloque uma foto para o produto" data-imagem />
+                    <span class="mensagem-erro"></span>
+                </fieldset>
+                <div class="formulario__botoes">
+                    <button type="submit" class="formulario__botao" id="enviar">Registrar</button>
+                    <button type="button" class="formulario__botao" id="limpar">Limpar</button>
+                </div>
+            </form>
+        </section>
+        <section class="produtos">
+            <h2>Meus Produtos</h2>
+        <ul class="produtos__conteiner" data-lista>
+            
+        </ul>
+        </section>
+    </div>
+    </section>
+    </main>
+
+    <footer class="rodape">
+        <div>
+            <img class="imagem__espelhada" src="/public/img/lucario-pixel.png" alt="Lucario pixelado.">
+            <h3 class="rodape__titulo">aLucario</h3>
+            <img src="/public/img/lucario-pixel.png" alt="Lucario pixelado.">
+        </div>
+        <p class="rodape__texto">Desenvolvido por Yudi Kavaguti. 2024</p>
+    </footer>
+
+    <script src="/src/js/script.js"></script>
+    <script src="/src/js/mostrarProduto.js" type="module"></script>
+    <script src="/src/js/criarProduto.js" type="module"></script>
+</body>
+</html>

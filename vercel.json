@@ -1,0 +1,11 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/produtos.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/(.*)", "dest": "/api/produtos.js" },
+      { "src": "/(.*)", "dest": "/pages/index.html" }
+    ]
+  }
+  
